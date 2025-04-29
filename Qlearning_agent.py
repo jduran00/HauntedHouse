@@ -1,3 +1,6 @@
+"""
+This file contains the Qlearning agent and its needed functions.
+"""
 import gymnasium as gym 
 import ale_py
 import numpy as np
