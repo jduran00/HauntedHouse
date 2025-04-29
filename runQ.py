@@ -1,8 +1,11 @@
+"""
+This file defines the training function, and calls it
+"""
+
 from HH_Env import process_env
 from Qlearning_agent import HHAgent
 
 
-import pickle
 import time
 from datetime import datetime
 
@@ -29,9 +32,9 @@ def train(agent, env, num_episodes=1000):
             next_state = tuple(next_obs.tolist())
             
             # edited rewards due to non-improvement
-            if state not in visited_states:
-                reward += 1.0
-                visited_states.add(state)  # encourage exploration
+            #if state not in visited_states:
+                #reward += 1.0
+                #visited_states.add(state)  # encourage exploration
 
             # Update the Q-values
             agent.update(state, action, next_state, reward)
@@ -53,12 +56,13 @@ def train(agent, env, num_episodes=1000):
         # Log average every 10 episodes
         if (ep + 1) % 10 == 0:
             avg_reward = sum(score_per_ep[-10:]) / 10
-            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            timestamp = datetime.now().strftime("%H:%M:%S")
             print(f"Average reward for episodes {ep + 1 - 10 + 1}-{ep + 1}: {avg_reward:.2f} at {timestamp}\n\n")
             reward_log.write(f"Average reward for episodes {ep + 1 - 10 + 1}-{ep + 1}: {avg_reward:.2f} at {timestamp}\n\n")
 
         reward_log.flush()
 
+    # Update and close txt file
     total_time = time.time() - start_time  # End timing
     print(f"\nTime for completion {total_time:.2f}  seconds. ")
     reward_log.write(f"\nTraining completed in {total_time:.2f} seconds.\n")
@@ -67,6 +71,7 @@ def train(agent, env, num_episodes=1000):
 
     return score_per_ep
 
+# Run train()
 if __name__ == "__main__":
     env = process_env()
     agent = HHAgent(
