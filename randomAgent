@@ -1,0 +1,45 @@
+"""
+This file contains a random agent and an agent that runs through all possible moves
+"""
+
+import gymnasium as gym 
+import ale_py
+
+gym.register_envs(ale_py)
+
+#Create Haunted House Env
+env = gym.make("ALE/HauntedHouse-v5", render_mode="human")
+
+observation, info = env.reset()
+random = True
+total_reward = 0 # Track Score
+if random:
+    
+    # Random Action
+    for _ in range(1000):
+        action = env.action_space.sample()
+        observation, reward, terminated, truncated, info = env.step(action)
+        
+        total_reward += reward
+
+        if terminated:
+            print(f"Terminated: Game Over. Score : {total_reward}")
+            observation, info = env.reset()
+            break
+        elif truncated:
+            print(f"Truncated: Time's UpScore : {total_reward}")
+            observation, info = env.reset()
+            break
+else:
+    # Run every possible action
+    action = 0
+    for i in range(1700):
+        if i % 100 == 0 and i != 0:
+            action += 1
+        print(action)
+        observation, reward, terminated, truncated, info = env.step(action)
+        if terminated or truncated:
+            observation, info = env.reset()    
+
+print(f"Loop Over. Score : {total_reward}")
+env.close()
