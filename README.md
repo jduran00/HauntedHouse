@@ -54,11 +54,19 @@ The first thing I did was read all of the Gymnasium Documentation. From here I w
 
 I tested it with an agent that made a random move 1000 times and the enviroment functioned well. I also added a section that would run every possible action 100 time in quick secession while printing the action so that I could familiarize myself with the action movements. 
 
+Video below is sped up.
+
+![HH2](https://github.com/user-attachments/assets/fed1a125-b79e-4b02-bbf1-84a7a5d41598)
+
 As expected the scores returned were typtically negative, all lives were lost, no shards of urn were found and more matches were used then was necessary. In fact, for all of the random agents I ran about half of them never left the first room, and the other half never found a third. 
 
 ### Q-Learning Agent
 
 My inital approach to creating a Q-learning project was to take insperation from the previous Pac-Man code I had written and use the example Blackjack agent from Gymnasium to see how it would fit within an Gymnasium game enviroment. The logic behind this is by taking somthing familar that I completely understand I can make the un-familiar more approchable and learn it quicker. Below, I have boiled down this agent to three main issues I ran into and my approches to solving them.
+
+This video is sped up and shows that the agent seems to explore better than the random agent but is still having difficulties.
+![hh3](https://github.com/user-attachments/assets/da01ecf1-bb2e-4a5c-a906-fc259349e09e)
+
 
 #### Hurdle 1: Enviroment
 The cornerstone aspects that I had relied upon in the Pac-Man project were not handed to me the same way in the Atari env. I needed to find a way to get the "state" and the "action" from the complex enviroment. I already managed to call it, I needed to find a way to process it. After much trial and error and research, [this article](https://medium.com/@jakemazurkiewicz6/deep-q-learning-ai-to-master-atari-games-e5d2c7862704) by Jake Mazurkiewi was not only applicable to my current challenge but led me to the wrapper's provided by [Gymnasium](https://gymnasium.farama.org/api/wrappers/#module-gymnasium.wrappers). The wrappers that I ended up using were as follows: GrayscaleObservation, ResizeObservation, FlattenObservation,TransformObservation and TimeLimit. These ended up doing all of the heavy lifting for me and created a one dimensional, small, grayscale enviroment for my agent to understand. The inital code I had written to create the enviroment (as I shared above) has doubled so I put in its own file, HH_Env.py 
