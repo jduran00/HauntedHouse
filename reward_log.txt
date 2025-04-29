@@ -1,0 +1,93 @@
+This is an non-complete example of the format and common results added to reward_log.txt by runQ.py.
+
+
+Training started at: 21:51:11
+
+Episode 1: Score = -13.0
+Episode 2: Score = -37.0
+Episode 3: Score = -32.0
+Episode 4: Score = -20.0
+Episode 5: Score = -11.0
+Episode 6: Score = -37.0
+Episode 7: Score = -26.0
+Episode 8: Score = -27.0
+Episode 9: Score = -22.0
+Episode 10: Score = -30.0
+Average reward for episodes 1-10: -25.50 at 21:56:22
+
+Episode 11: Score = -24.0
+Episode 12: Score = -32.0
+Episode 13: Score = -17.0
+Episode 14: Score = -28.0
+Episode 15: Score = -12.0
+Episode 16: Score = -15.0
+Episode 17: Score = -37.0
+Episode 18: Score = -30.0
+Episode 19: Score = -25.0
+Episode 20: Score = -22.0
+Average reward for episodes 11-20: -24.20 at 22:01:15
+
+Episode 21: Score = -34.0
+Episode 22: Score = -32.0
+Episode 23: Score = -27.0
+Episode 24: Score = -35.0
+Episode 25: Score = -40.0
+Episode 26: Score = -24.0
+Episode 27: Score = -42.0
+Episode 28: Score = -33.0
+Episode 29: Score = -39.0
+Episode 30: Score = -28.0
+Average reward for episodes 21-30: -33.40 at 22:08:01
+
+Episode 31: Score = -42.0
+Episode 32: Score = -22.0
+Episode 33: Score = -26.0
+Episode 34: Score = -16.0
+Episode 35: Score = -22.0
+Episode 36: Score = -34.0
+Episode 37: Score = -19.0
+Episode 38: Score = -27.0
+Episode 39: Score = -23.0
+Episode 40: Score = -28.0
+Average reward for episodes 31-40: -25.90 at 22:13:06
+
+Episode 41: Score = -28.0
+Episode 42: Score = -37.0
+Episode 43: Score = -27.0
+Episode 44: Score = -23.0
+Episode 45: Score = -26.0
+Episode 46: Score = -30.0
+Episode 47: Score = -22.0
+Episode 48: Score = -20.0
+Episode 49: Score = -24.0
+Episode 50: Score = -24.0
+Average reward for episodes 41-50: -26.10 at 22:18:28
+
+Episode 51: Score = -31.0
+Episode 52: Score = -20.0
+Episode 53: Score = -34.0
+Episode 54: Score = -28.0
+Episode 55: Score = -23.0
+Episode 56: Score = -37.0
+Episode 57: Score = -23.0
+Episode 58: Score = -17.0
+Episode 59: Score = -25.0
+Episode 60: Score = -30.0
+Average reward for episodes 51-60: -26.80 at 22:23:24
+
+Episode 61: Score = -25.0
+Episode 62: Score = -38.0
+Episode 63: Score = -26.0
+Episode 64: Score = -20.0
+Episode 65: Score = -36.0
+Episode 66: Score = -32.0
+Episode 67: Score = -19.0
+Episode 68: Score = -27.0
+Episode 69: Score = -32.0
+Episode 70: Score = -25.0
+Average reward for episodes 61-70: -28.00 at 22:27:45
+
+Episode 71: Score = -22.0
+Episode 72: Score = -30.0
+Episode 73: Score = -31.0
+Episode 74: Score = -29.0
