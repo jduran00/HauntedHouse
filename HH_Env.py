@@ -1,3 +1,7 @@
+"""
+This file creates the Haunted House enviroment
+"""
+
 import gymnasium as gym 
 import ale_py
 import numpy as np
@@ -12,6 +16,7 @@ from gymnasium.wrappers import TimeLimit
 
 gym.register_envs(ale_py)
 
+# Make env grayscale, 1D, and smaller 
 def process_env():
     env = gym.make("ALE/HauntedHouse-v5", render_mode=None) #render None for speed, "human" to see how it works
     env = GrayscaleObservation(env, keep_dim=False)
