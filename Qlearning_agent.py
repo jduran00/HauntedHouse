@@ -10,7 +10,8 @@ env = process_env()
 #env = gym.make("ALE/HauntedHouse-v5", render_mode="human")
 
 # Structure influnced by gymnasium's training an agent documentation and berkleys Pacman project 
-# Some code that I wrote for qlearningAgents.py in the pacman project was reused and tailored to Haunted House
+
+# Create agent
 class HHAgent:
     def __init__(
         self,
@@ -40,16 +41,18 @@ class HHAgent:
         return list(range(self.env.action_space.n))
     
     def getQValue(self, state, action):
-    
+        "Return Q value"
         return self.q_values[state][action]
     
     def computeValueFromQValues(self, state):
+        "Return max value from possible Q values"
         legal_actions = self.getLegalActions(state)
         if not legal_actions:
             return 0.0
         return np.max([self.getQValue(state, a) for a in legal_actions])
 
     def computeActionFromQValues(self, state):
+        "Return action from possible Q values"
         legal_actions = self.getLegalActions(state)
         if not legal_actions:
             return None
@@ -65,7 +68,7 @@ class HHAgent:
 
     def getAction(self, obs):
         """
-        Compute action to take in current state. 
+        Return action to take in current state. 
         """
         state = tuple(obs.tolist())
         if np.random.random() < self.epsilon:
