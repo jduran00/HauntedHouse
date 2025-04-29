@@ -110,3 +110,25 @@ These are very real points for improvement within my project. However, this pape
 Finally, although the results were not as I had initially hoped, I have learned alot about RL and different enviroments. Most importantly I have a better understanding about what parts of gameplay  and what elements are important to a sucessful RL.
 
 
+## Resources
+
+In order used:
+
+Gymnasium documentation. Multiple articles. https://gymnasium.farama.org/ 
+
+Atariage. AtariAge News RSS. https://atariage.com/manual_html_page.php?SoftwareLabelID=233 
+
+[Njenkin]. (2023, November 5). "Haunted House - on the Atari 2600 - with Commentary !!". Youtube. https://www.youtube.com/watch?v=Q6m7twIkFyo
+
+Ale documentation. ALE Documentation. (n.d.). https://ale.farama.org/index.html 
+
+Mazurkiewicz, J. (2024, May 15). Deep Q-learning AI to master atari games. Medium. https://medium.com/@jakemazurkiewicz6/deep-q-learning-ai-to-master-atari-games-e5d2c7862704 
+
+Luu, W. by: Q. T. (2025, February 12). Q-learning vs. deep Q-learning vs. Deep Q-Network. Baeldung on Computer Science. https://www.baeldung.com/cs/q-learning-vs-deep-q-learning-vs-deep-q-network#:~:text=One%20of%20the%20main%20drawbacks,to%20store%20the%20Q%2Dvalues. 
+
+[Elizr]. (2014, April 19). Deepmind artificalintelligence @FDOT14 [Video]. YouTube. https://www.youtube.com/watch?v=EfGD2qveGdQ&t=12s
+
+Wu, Y., Fan, Y., Liang, P. P., Azaria, A., Li, Y., & Mitchell, T. M. (2024, July 20). Read and reap the rewards: Learning to play Atari with the help of instruction manuals. arXiv.org. https://arxiv.org/abs/2302.04449 
+
+
+
